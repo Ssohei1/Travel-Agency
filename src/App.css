@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'RokhN';
+  src: url(../src/assets/Fonts/RokhFaNum-Normal.woff2)
+}
+
+@font-face {
+  font-family: 'RokhM';
+  src: url(../src/assets/Fonts/RokhFaNum-Medium.woff2)
+}
+@font-face {
+  font-family: 'RokhB';
+  src: url(../src/assets/Fonts/RokhFaNum-Bold.woff2)
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
