@@ -11,6 +11,18 @@
   font-family: 'RokhB';
   src: url(../src/assets/Fonts/RokhFaNum-Bold.woff2)
 }
+@font-face {
+  font-family: 'iransansB';
+  src: url(../src/assets/Fonts/IRANSansWeb_Bold.woff2)
+}
+@font-face {
+  font-family: 'iransansM';
+  src: url(../src/assets/Fonts/IRANSansWeb_Medium.woff2)
+}
+@font-face {
+  font-family: 'iransansL';
+  src: url(../src/assets/Fonts/IRANSansWeb_Light.woff2)
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
