@@ -12,11 +12,12 @@ module.exports = {
         iransansM :'iransansM'
       },
       colors: {
+        backgroundlight: '#FFFBFB',
         primary: "#5264FF",
         bgLight: "#FFFBFB",
         txt: "#404040",
         secondary: "#FF782C",
-        cardstroke: '#40404040'
+        cardstroke: '#404040'
       },
     },
   },

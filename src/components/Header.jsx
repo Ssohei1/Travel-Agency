@@ -9,14 +9,14 @@ import {
 } from "iconsax-react";
 export const Header = () => {
   return (
-    <>
+    <div className="bg-backgroundlight">
       <header className="mx-auto flex max-w-[1440px] items-center justify-between p-4">
         <a href="#" className="flex items-center gap-3">
           <img className="w-5" src={logo} alt="logo" />
           <h1 className="font-rokhB text-2xl">سفرکن</h1>
           <div className="mr-6 hidden lg:block">
             <nav className="">
-              <ul className="font-iransansL flex items-center gap-5 text-xl text-txt">
+              <ul className="flex items-center gap-5 font-iransansL text-xl text-txt">
                 <li>
                   <a href="#">هتل</a>
                 </li>
@@ -49,14 +49,18 @@ export const Header = () => {
           <button className="rounded-full border border-[#4E30FF] bg-primary p-3">
             <BagHappy size="24" color="#FFFBFB" />
           </button>
-          <button className="flex items-center gap-1 rounded-full border border-cardstroke px-4 py-2 font-iransansM text-txt">
+          <button className="flex items-center gap-1 rounded-full border border-cardstroke/25 px-4 py-2 font-iransansM text-txt">
             <User size="22" color="#404040" />
             حساب کاربری
           </button>
         </div>
-        <HambergerMenu className="block lg:hidden" size="32" color="#000" />
+        <HambergerMenu
+          className="block cursor-pointer lg:hidden"
+          size="32"
+          color="#000"
+        />
       </header>
-      <hr className="border-cardstroke" />
-    </>
+      <hr className="border-cardstroke/25" />
+    </div>
   );
 };
