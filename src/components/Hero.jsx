@@ -25,16 +25,18 @@ export const Hero = () => {
             <img className="w-6" src={beach} alt="beach" />
             بسیار سفر باید تا پخته شود خامی
           </div>
-          <h1 className="font-rokhB text-6xl leading-normal">
+          <h1 className="mb-5 font-rokhB text-3xl leading-normal sm:text-5xl md:text-6xl md:leading-normal">
             دنیا را کشف کنید
             <br className="hidden lg:block" /> زندگی را{" "}
-            <span className="text-primary">
-              {/* <br className="bock lg:hidden" /> */}
-              تجربه
-            </span>
-            <span className="flex gap-4">
+            <br className="lg:hidden" />
+            <span className="text-primary">تجربه </span>
+            <span className="inline-flex gap-4 lg:flex">
               کنید
-              <img className="" src={travelling} alt="travelling" />
+              <img
+                className="w-8 sm:w-10 md:w-14 lg:w-auto"
+                src={travelling}
+                alt="travelling"
+              />
             </span>
           </h1>
           <div className="mt-12 hidden gap-5 lg:flex">
@@ -75,7 +77,7 @@ export const Hero = () => {
         {/* left side */}
         <div className="relative flex w-full flex-col lg:w-1/2 lg:flex-row lg:justify-end">
           <div className="absolute left-10 top-10 rounded-[32px] border border-white bg-white/40 p-5 px-6">
-            <p className="mb-5 flex font-rokhB text-white">
+            <p className="mb-5 flex font-rokhB text-base text-white md:text-lg">
               <Location
                 size="25"
                 color="#FFF"
@@ -83,18 +85,29 @@ export const Hero = () => {
               />
               تایلند
             </p>
-            <h2 className="font-rokhB text-7xl text-white">پاتایا</h2>
+            <h2 className="font-rokhB text-5xl text-white md:text-7xl">
+              پاتایا
+            </h2>
           </div>
-          <div className="absolute left-14 top-52 flex gap-1 font-rokhB text-6xl text-white">
-            <ArrowRight className="cursor-pointer" size="50" color="#FFF" />
+          <div className="absolute left-14 top-52 mt-2 flex gap-1 font-rokhB text-5xl text-white md:text-6xl">
+            <ArrowRight
+              className="cursor-pointer"
+              size={window.innerWidth > 768 ? 50 : 35}
+              color="#FFF"
+            />
             01
-            <ArrowLeft className="cursor-pointer" size="50" color="#FFF" />
+            <ArrowLeft
+              className="cursor-pointer"
+              size={window.innerWidth > 768 ? 50 : 35}
+              color="#FFF"
+            />
           </div>
           <img
-            className="h-96 w-full rounded-[56px] object-cover lg:h-[811px] lg:w-[636px]"
+            className="h-80 w-full rounded-[56px] object-cover sm:h-96 lg:h-[811px] lg:w-[636px]"
             src={pattaya}
             alt="pattaya"
           />
+          {/* icon bar mbile */}
           <div className="mt-12 flex w-full justify-between gap-1 lg:hidden">
             <div className="flex flex-col items-center">
               <img
@@ -131,7 +144,7 @@ export const Hero = () => {
           </div>
         </div>
         {/* search bar */}
-        <div className="mt-10 flex w-full flex-col items-start gap-7 rounded-[58px] border border-cardstroke/35 bg-white p-5 px-10 font-iransansM text-lg text-txt lg:absolute lg:bottom-16 lg:left-[20%] lg:mt-0 lg:w-auto lg:flex-row lg:items-center lg:gap-0 lg:rounded-full">
+        <div className="360px:rounded-[58px] 360px:px-10 mt-10 flex w-full flex-col items-start justify-between gap-7 rounded-[50px] border border-cardstroke/35 bg-white p-5 px-5 font-iransansM text-txt sm:text-lg lg:absolute lg:bottom-16 lg:left-[50%] lg:mt-0 lg:w-[1000px] lg:-translate-x-1/2 lg:flex-row lg:items-center lg:gap-0 lg:rounded-full">
           <p className="relative ml-7 flex cursor-pointer items-center gap-2">
             <Location className="" size="20" color="#404040" />
             <span className="absolute bottom-2 right-6 text-[#FF3B3B]">*</span>
@@ -153,7 +166,7 @@ export const Hero = () => {
             تعداد
             <ArrowDown2 size={18} color="#404040" />
           </p>
-          <button className="mx-auto w-full rounded-full bg-primary px-7 py-2 text-white lg:w-auto">
+          <button className="w-full rounded-full bg-primary px-7 py-2 text-white lg:w-auto">
             جستجو
           </button>
         </div>

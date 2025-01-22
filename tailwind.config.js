@@ -19,6 +19,9 @@ module.exports = {
         secondary: "#FF782C",
         cardstroke: '#404040'
       },
+      screens: {
+        '360px': '360px'
+      }
     },
   },
   plugins: [],
