@@ -13,14 +13,14 @@ export const MostPopular = () => {
             محبوب ترین مکان ها
             <img src={tower} alt="tower" />
           </h2>
-          <button className="rounded-full bg-[#EAEAEA] px-3 py-3 font-iransansB text-xs text-txt 360px:px-6 360px:text-[1rem]">
+          <button className="rounded-full bg-[#EAEAEA] px-3 py-3 font-iransansM text-xs text-txt 360px:px-6 360px:text-[1rem]">
             دیدن همه
           </button>
         </div>
         {/* place boxes */}
         <div className="mt-16 flex w-full flex-wrap justify-center gap-6 lg:flex-nowrap">
           {/* box */}
-          <div className="w-full rounded-[33px] border border-cardstroke/20 p-4 880px:w-auto">
+          <div className="w-full cursor-pointer rounded-[33px] border border-cardstroke/20 p-4 880px:w-auto lg:w-[30%]">
             <div className="mb-7">
               <img
                 className="w-full rounded-[28px]"
@@ -54,7 +54,7 @@ export const MostPopular = () => {
               </div>
             </div>
           </div>
-          <div className="w-full rounded-[33px] border border-cardstroke/20 p-4 880px:w-auto">
+          <div className="w-full cursor-pointer rounded-[33px] border border-cardstroke/20 p-4 880px:w-auto lg:w-[30%]">
             <div className="mb-7">
               <img className="w-full rounded-[28px]" src={dubai} alt="dubai" />
             </div>
@@ -82,7 +82,7 @@ export const MostPopular = () => {
               </div>
             </div>
           </div>
-          <div className="w-full rounded-[33px] border border-cardstroke/20 p-4 880px:w-auto">
+          <div className="w-full cursor-pointer rounded-[33px] border border-cardstroke/20 p-4 880px:w-auto lg:w-[30%]">
             <div className="mb-7">
               <img
                 className="w-full rounded-[28px]"

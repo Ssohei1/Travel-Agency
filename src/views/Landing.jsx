@@ -2,6 +2,8 @@ import React from "react";
 import { Hero } from "../components/Hero";
 import { MostPopular } from "../components/MostPopular";
 import { WhyUs } from "../components/WhyUs";
+import { BestSelling } from "../components/BestSelling";
+import { DownloadApp } from "../components/DownloadApp";
 
 export const Landing = () => {
   return (
@@ -9,6 +11,8 @@ export const Landing = () => {
       <Hero />
       <MostPopular />
       <WhyUs />
+      <BestSelling />
+      <DownloadApp />
     </>
   );
 };

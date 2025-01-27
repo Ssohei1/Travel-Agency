@@ -5,8 +5,8 @@ import clock from "../assets/images/clock.svg";
 import dollarsign from "../assets/images/dollarsign.svg";
 export const WhyUs = () => {
   return (
-    <div className="bg-backgroundlight pt-16">
-      <div className="mx-auto flex max-w-[1440px] flex-col p-4">
+    <div className="bg-backgroundlight pt-16 ">
+      <div className="mx-auto flex max-w-[1440px] flex-col p-4 880px:bg-[url('/public/bg.png')]">
         <h2 className="relative mb-12 flex items-center font-rokhB text-xl text-txt after:absolute after:inset-0 after:top-11 after:w-0 after:border-b-2 after:border-primary md:text-3xl md:after:w-10 lg:text-4xl">
           چرا سفر کن
           <img
@@ -15,7 +15,6 @@ export const WhyUs = () => {
             alt="questionmark"
           />
         </h2>
-        <div className="880px:bg-[url('/public/bg.png')]">
           {/* boxes */}
           <div className="450px:rounded-[50px] flex w-full flex-wrap justify-center gap-10 rounded-[40px] bg-primary px-10 py-16 lg:flex-nowrap lg:py-10">
             {/* box */}
@@ -66,7 +65,6 @@ export const WhyUs = () => {
               </p>
             </div>
           </div>
-        </div>
       </div>
     </div>
   );
