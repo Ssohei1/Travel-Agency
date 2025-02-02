@@ -6,8 +6,8 @@ import dollarsign from "../assets/images/dollarsign.svg";
 export const WhyUs = () => {
   return (
     <div className="bg-backgroundlight pt-16 ">
-      <div className="mx-auto flex max-w-[1440px] flex-col p-4 880px:bg-[url('/public/bg.png')]">
-        <h2 className="relative mb-12 flex items-center font-rokhB text-xl text-txt after:absolute after:inset-0 after:top-11 after:w-0 after:border-b-2 after:border-primary md:text-3xl md:after:w-10 lg:text-4xl">
+      <div className="mx-auto flex max-w-[1440px] flex-col p-4 880px:bg-[url('/public/images/bg.png')]">
+        <h2 className="relative mb-12 flex items-center font-rokhB text-xl text-txt after:absolute after:inset-0 after:top-11 after:w-0 after:border-b-2 after:border-primary md:text-3xl md:after:w-10 1300px:text-4xl">
           چرا سفر کن
           <img
             className="w-[28px] 880px:w-[auto]"

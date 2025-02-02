@@ -8,7 +8,7 @@ export const Comments = () => {
   return (
     <div className="bg-backgroundlight pt-24">
       <div className="mx-auto flex max-w-[1440px] flex-col p-4">
-        <h2 className="relative flex items-center font-rokhB text-xl text-txt after:absolute after:inset-0 after:w-0 after:border-b-2 after:border-primary 450px:text-2xl 500px:text-3xl md:after:top-10 md:after:w-14 lg:text-4xl">
+        <h2 className="relative flex items-center font-rokhB text-xl text-txt after:absolute after:inset-0 after:w-0 after:border-b-2 after:border-primary 450px:text-2xl 500px:text-3xl md:after:top-10 md:after:w-14 1300px:text-4xl">
           نظرات
           <img className="mr-1 w-6" src={comment} alt="bomb" />
         </h2>
@@ -89,7 +89,7 @@ export const Comments = () => {
               </div>
             </div>
           </div>
-          <button className="mt-10 mb-16 rounded-full bg-primary py-4 font-iransansB text-lg text-white 450px:text-xl">
+          <button className="mt-10 mb-16 rounded-full bg-primary py-3 font-iransansB text-lg text-white 450px:text-xl">
             دیدن همه
           </button>
         </div>

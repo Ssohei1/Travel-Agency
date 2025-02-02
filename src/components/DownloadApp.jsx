@@ -7,7 +7,7 @@ export const DownloadApp = () => {
   return (
     <div className="bg-backgroundlight pt-28 880px:pt-16">
       <div className="mx-auto flex max-w-[1440px] flex-col p-4">
-        <div className="flex flex-col rounded-[50px] 450px:rounded-[58px] bg-primary bg-center bg-no-repeat px-6 pb-16 880px:bg-[url('/public/bg2.png')] 880px:px-0 880px:py-16">
+        <div className="flex flex-col rounded-[50px] 450px:rounded-[58px] bg-primary bg-center bg-no-repeat px-6 pb-16 880px:bg-[url('/public/images/bg2.png')] 880px:px-0 880px:py-16">
           <div className="relative bottom-[70px] flex w-full justify-center 880px:hidden">
             <img className="z-30 w-[500px]" src={desktop} alt="desktopShot" />
           </div>

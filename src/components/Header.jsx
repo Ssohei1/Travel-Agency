@@ -19,7 +19,7 @@ export const Header = () => {
           </Link>
           <div className="mr-6 hidden lg:block">
             <nav className="">
-              <ul className="flex items-center gap-5 font-iransansL text-xl text-txt">
+              <ul className="flex items-center gap-5 font-iransansL text-lg text-txt 1300px:text-xl">
                 <li>
                   <Link to="#">هتل</Link>
                 </li>
@@ -42,17 +42,20 @@ export const Header = () => {
                   <Link to="#">سفرنامه</Link>
                 </li>
                 <li className="cursor-pointer">
-                  <SearchNormal1 size="23" color="#292D32" />
+                  <SearchNormal1 size="21" color="#292D32" />
                 </li>
               </ul>
             </nav>
           </div>
         </div>
         <div className="hidden items-center gap-6 lg:flex">
-          <button className="rounded-full border border-[#4E30FF] bg-primary p-3">
+          <button className="rounded-full border border-[#4E30FF] bg-primary p-2 1300px:p-3">
             <BagHappy size="24" color="#FFFBFB" />
           </button>
-          <Link to="/login" className="flex items-center gap-1 rounded-full border border-cardstroke/25 px-4 py-2 font-iransansM text-txt">
+          <Link
+            to="/login"
+            className="flex items-center gap-1 rounded-full border border-cardstroke/25 px-4 py-2 font-iransansM text-txt"
+          >
             <User size="22" color="#404040" />
             حساب کاربری
           </Link>

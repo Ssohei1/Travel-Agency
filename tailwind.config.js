@@ -25,6 +25,7 @@ module.exports = {
         "880px": "880px",
         "450px": "450px",
         "500px": "500px",
+        "1300px": "1300px",
       },
       backgroundImage: {
         // "pattern": `url(${path})`,
