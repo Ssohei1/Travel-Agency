@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import beach from "../assets/images/beach.svg";
 import beachumbrella from "../assets/images/beach-umbrella.svg";
 import city from "../assets/images/city.svg";
 import mountain from "../assets/images/mountain.svg";
 import tent from "../assets/images/tent.svg";
 import travelling from "../assets/images/travelling.svg";
-import pattaya from "../assets/images/pattaya.png";
 import {
   ArrowDown2,
   ArrowLeft,
@@ -14,8 +13,31 @@ import {
   Location,
   User,
 } from "iconsax-react";
+import axios from "axios";
 
 export const Hero = () => {
+  // render slider
+  const [slider, setSlider] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/slider")
+      .then((response) => setSlider(response.data))
+      .catch((err) => console.log(err));
+  }, []);
+  const [currentIndex, setcurrentIndex] = useState(0);
+  const nextImage = () => {
+    setcurrentIndex((currentIndex + 1) % slider.length);
+  };
+  const previousImage = () => {
+    setcurrentIndex((currentIndex - 1 + slider.length) % slider.length);
+  };
+  // resize prev/next icon
+  const [windowwidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <div className="bg-backgroundlight">
       <div className="relative mx-auto flex max-w-[1440px] flex-col items-center justify-between p-4 lg:flex-row lg:items-start">
@@ -76,36 +98,41 @@ export const Hero = () => {
         </div>
         {/* left side */}
         <div className="relative flex w-full flex-col lg:w-1/2 lg:flex-row lg:justify-end">
-          <div className="absolute left-10 top-10 rounded-[32px] border border-white bg-white/40 p-5 px-6">
-            <p className="mb-5 flex font-rokhB text-base text-white md:text-lg">
-              <Location
-                size="25"
-                color="#FFF"
-                className="leftt-1 relative bottom-1"
-              />
-              تایلند
-            </p>
-            <h2 className="font-rokhB text-5xl text-white md:text-7xl">
-              پاتایا
-            </h2>
-          </div>
+          {slider.length > 0 && (
+            <div className="absolute left-10 top-10 rounded-[32px] border border-white bg-white/40 p-5 px-6">
+              <p className="mb-5 flex font-rokhB text-base text-white md:text-lg">
+                <Location
+                  size="25"
+                  color="#FFF"
+                  className="leftt-1 relative bottom-1"
+                />
+                {slider[currentIndex]?.country}
+              </p>
+              <h2 className="font-rokhB text-5xl text-white md:text-7xl">
+                {slider[currentIndex]?.city}
+              </h2>
+            </div>
+          )}
+
           <div className="absolute left-14 top-52 mt-2 flex gap-1 font-rokhB text-5xl text-white md:text-6xl">
             <ArrowRight
+              onClick={nextImage}
               className="cursor-pointer"
-              size={window.innerWidth > 768 ? 50 : 35}
+              size={windowwidth > 768 ? 50 : 35}
               color="#FFF"
             />
-            01
+            {currentIndex + 1}
             <ArrowLeft
+              onClick={previousImage}
               className="cursor-pointer"
-              size={window.innerWidth > 768 ? 50 : 35}
+              size={windowwidth > 768 ? 50 : 35}
               color="#FFF"
             />
           </div>
           <img
             className="h-80 w-full rounded-[56px] object-cover sm:h-96 lg:h-[811px] lg:w-[636px]"
-            src={pattaya}
-            alt="pattaya"
+            src={slider[currentIndex]?.src}
+            alt={slider[currentIndex]?.city}
           />
           {/* icon bar mbile */}
           <div className="mt-12 flex w-full justify-between gap-1 lg:hidden">
@@ -144,7 +171,7 @@ export const Hero = () => {
           </div>
         </div>
         {/* search bar */}
-        <div className="360px:rounded-[58px] 360px:px-10 mt-10 flex w-full flex-col items-start justify-between gap-7 rounded-[50px] border border-cardstroke/35 bg-white p-5 px-5 font-iransansM text-txt sm:text-lg lg:absolute lg:bottom-16 lg:left-[50%] lg:mt-0 lg:w-[1000px] lg:-translate-x-1/2 lg:flex-row lg:items-center lg:gap-0 lg:rounded-full">
+        <div className="mt-10 flex w-full flex-col items-start justify-between gap-7 rounded-[50px] border border-cardstroke/35 bg-white p-5 px-5 font-iransansM text-txt 360px:rounded-[58px] 360px:px-10 sm:text-lg lg:absolute lg:bottom-16 lg:left-[50%] lg:mt-0 lg:w-[1000px] lg:-translate-x-1/2 lg:flex-row lg:items-center lg:gap-0 lg:rounded-full">
           <p className="relative ml-7 flex cursor-pointer items-center gap-2">
             <Location className="" size="20" color="#404040" />
             <span className="absolute bottom-2 right-6 text-[#FF3B3B]">*</span>
