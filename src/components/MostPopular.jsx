@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import tower from "../assets/images/tower.svg";
 import { Add, ArrowDown2, Star1 } from "iconsax-react";
 import axios from "axios";
-export const MostPopular = () => {
+import { Link } from "react-router-dom";
+export const MostPopular = ({title}) => {
   const [tours, setTours] = useState([]);
   useEffect(() => {
     axios
@@ -15,7 +16,8 @@ export const MostPopular = () => {
       <div className="mx-auto flex max-w-[1440px] flex-col p-4">
         <div className="flex justify-between">
           <h2 className="relative flex items-center font-rokhB text-xl text-txt after:absolute after:inset-0 after:w-0 after:border-b-2 after:border-primary md:text-3xl md:after:top-10 md:after:w-14 1300px:text-4xl">
-            محبوب ترین مکان ها
+            {/* محبوب ترین مکان ها */}
+            {title}
             <img src={tower} alt="tower" />
           </h2>
           <button className="rounded-full bg-[#EAEAEA] px-3 py-3 font-iransansM text-xs text-txt 360px:px-6 360px:text-[1rem]">
@@ -29,7 +31,7 @@ export const MostPopular = () => {
           {tours.map((tour) => (
             <div
               key={tour.id}
-              className="w-full cursor-pointer rounded-[33px] border border-cardstroke/20 p-4 880px:w-auto lg:w-[30%]"
+              className="w-full rounded-[33px] border border-cardstroke/20 p-4 880px:w-auto lg:w-[30%]"
             >
               <div className="mb-7">
                 <img
@@ -40,9 +42,9 @@ export const MostPopular = () => {
               </div>
               <div className="flex flex-col">
                 <div className="mb-3 flex justify-between">
-                  <h3 className="font-iransansB text-xl text-txt 1300px:text-2xl">
+                  <Link to={`/tour/${tour.slug}`} className="font-iransansB text-xl text-txt 1300px:text-2xl">
                     تور {tour.city}
-                  </h3>
+                  </Link>
                   <div className="flex gap-2">
                     <Star1 size="25" color="#ffda19" variant="Bold" />
                     <p className="font-rokhM text-[22px] text-txt">

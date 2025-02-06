@@ -4,14 +4,15 @@
       "id": 1,
       "city": "آنتالیا",
       "country": "ترکیه",
-      "country_en": "Turkey",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg",
+      "country_en": "Türkiye",
+      "flag": "http://localhost:3001/images/turkey.svg",
       "continent": "آسیا",
       "tour_type": "تور خارجی",
-      "slug": "tours/turkey/antalya",
-      "image": "images/antalya.svg",
+      "slug": "turkey-antalya",
+      "image": "http://localhost:3001/images/antalya.svg",
+      "heroImage": "http://localhost:3001/images/antalyaview2.jpg",
       "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت.",
-      "start_date": "1403/12/18",
+      "start_date": "1403/12/12",
       "end_date": "1403/12/25",
       "days": 3,
       "nights": 4,
@@ -19,22 +20,23 @@
       "rating": 4.1,
       "prices": {
         "tour_per_person": "45.000.000",
-        "tour_7_days": "15.000.000",
-        "breakfast_per_person": "60.000",
-        "service_fee": 20000,
-        "discount": "-20.000.000"
+        "tour_7_days": "150.000.000",
+        "breakfast_per_person": "100.000",
+        "service_fee": "20.000",
+        "discount": "20.000.000"
       }
     },
     {
       "id": 2,
       "city": "دبی",
       "country": "امارات متحده عربی",
-      "country_en": "United Arab Emirates",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg",
+      "country_en": "UAE",
+      "flag": "http://localhost:3001/images/uae.png",
       "continent": "آسیا",
       "tour_type": "تور خارجی",
-      "slug": "tours/united_arab_emirates/dubai",
-      "image": "images/dubai.svg",
+      "slug": "united-arab-emirates-dubai",
+      "image": "http://localhost:3001/images/dubai.svg",
+      "heroImage": "http://localhost:3001/images/antalyaview.png",
       "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت.",
       "start_date": "1403/12/8",
       "end_date": "1403/12/15",
@@ -44,10 +46,10 @@
       "rating": 4.9,
       "prices": {
         "tour_per_person": "65.000.000",
-        "tour_7_days": "15.000.000",
-        "breakfast_per_person": "60.000",
-        "service_fee": 20000,
-        "discount": "-20.000.000"
+        "tour_7_days": "150.000.000",
+        "breakfast_per_person": "100.000",
+        "service_fee": "20.000",
+        "discount": "20.000.000"
       }
     },
     {
@@ -55,11 +57,12 @@
       "city": "کوالالامپور",
       "country": "مالزی",
       "country_en": "Malaysia",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg",
+      "flag": "http://localhost:3001/images/malaysia.png",
       "continent": "آسیا",
       "tour_type": "تور خارجی",
-      "slug": "tours/malaysia/kuala_lumpur",
-      "image": "images/malaysia.svg",
+      "slug": "malaysia-kuala-lumpur",
+      "image": "http://localhost:3001/images/malaysia.svg",
+      "heroImage": "http://localhost:3001/images/antalyaview.png",
       "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت.",
       "start_date": "1403/12/10",
       "end_date": "1403/12/17",
@@ -69,14 +72,14 @@
       "rating": 4.9,
       "prices": {
         "tour_per_person": "85.000.000",
-        "tour_7_days": "15.000.000",
-        "breakfast_per_person": "60.000",
-        "service_fee": 20000,
-        "discount": "-20.000.000"
+        "tour_7_days": "150.000.000",
+        "breakfast_per_person": "100.000",
+        "service_fee": "20.000",
+        "discount": "20.000.000"
       }
     }
   ],
-  "slider" : [
+  "slider": [
     { "src": "images/pattaya.png", "city": "پاتایا", "country": "تایلند" },
     { "src": "images/dubai.svg", "city": "دوبی", "country": "امارات" },
     { "src": "images/antalyaview.png", "city": "آنتالیا", "country": "ترکیه" }

@@ -2,7 +2,10 @@
   font-family: 'RokhN';
   src: url(../src/assets/Fonts/RokhFaNum-Normal.woff2)
 }
-
+@font-face {
+  font-family: 'RokhS';
+  src: url(../src/assets/Fonts/Rokh-SemiBold.woff2)
+}
 @font-face {
   font-family: 'RokhM';
   src: url(../src/assets/Fonts/RokhFaNum-Medium.woff2)
@@ -17,7 +20,7 @@
 }
 @font-face {
   font-family: 'iransansM';
-  src: url(../src/assets/Fonts/IRANSansWeb_Medium.woff2)
+  src: url(../src/assets/Fonts/IRANSansWeb_Medium_FaNum.woff2)
 }
 @font-face {
   font-family: 'iransansL';

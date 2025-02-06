@@ -2,12 +2,17 @@ import React, { useEffect, useState } from "react";
 import bomb from "../assets/images/bomb.svg";
 import { Add, ArrowDown2, Setting4, Star1 } from "iconsax-react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 export const BestSelling = () => {
   const [tours, setTours] = useState([]);
   useEffect(() => {
     axios
       .get("http://localhost:3001/tours")
-      .then((response) => setTours([...response.data,...response.data]))
+      .then((response) => {
+        const data = response.data;
+        const repeatedData = [...data, ...data];
+        setTours(repeatedData);
+      })
       .catch((err) => console.error("Error fetching data:", err));
   }, []);
   return (
@@ -39,10 +44,10 @@ export const BestSelling = () => {
         {/* place boxes */}
         <div className="mt-16 flex w-full flex-wrap justify-center gap-6">
           {/* box */}
-          {tours.map((tour) => (
+          {tours.map((tour, index) => (
             <div
-              key={tour.id}
-              className="w-full cursor-pointer rounded-[33px] border border-cardstroke/20 p-4 880px:w-auto lg:w-[30%]"
+              key={`${tour.id}-${index}`}
+              className="w-full rounded-[33px] border border-cardstroke/20 p-4 880px:w-auto lg:w-[30%]"
             >
               <div className="mb-7">
                 <img
@@ -53,9 +58,9 @@ export const BestSelling = () => {
               </div>
               <div className="flex flex-col">
                 <div className="mb-3 flex justify-between">
-                  <h3 className="font-iransansB text-txt text-xl 1300px:text-2xl">
+                  <Link to={`/tour/${tour.slug}`} className="font-iransansB text-xl text-txt 1300px:text-2xl">
                     تور {tour.city}
-                  </h3>
+                  </Link>
                   <div className="flex gap-2">
                     <Star1 size="25" color="#ffda19" variant="Bold" />
                     <p className="font-rokhM text-[22px] text-txt">
