@@ -53,7 +53,7 @@ export const Header = () => {
             <BagHappy size="24" color="#FFFBFB" />
           </button>
           <Link
-            to="/login"
+            to="/signup"
             className="flex items-center gap-1 rounded-full border border-cardstroke/25 px-4 py-2 font-iransansM text-txt"
           >
             <User size="22" color="#404040" />
