@@ -58,7 +58,10 @@ export const BestSelling = () => {
               </div>
               <div className="flex flex-col">
                 <div className="mb-3 flex justify-between">
-                  <Link to={`/tour/${tour.slug}`} className="font-iransansB text-xl text-txt 1300px:text-2xl">
+                  <Link
+                    to={`/tour/${tour.slug}`}
+                    className="font-iransansB text-xl text-txt transition-all duration-300 hover:text-primary 1300px:text-2xl"
+                  >
                     تور {tour.city}
                   </Link>
                   <div className="flex gap-2">

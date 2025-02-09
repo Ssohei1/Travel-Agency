@@ -10,13 +10,13 @@ export const Footer = () => {
       <div className="mx-auto flex max-w-[1440px] flex-col p-4">
         <div className="flex flex-col-reverse justify-between gap-4 880px:flex-row 880px:items-center 880px:gap-0">
           <ul className="flex gap-7 font-iransansL text-white">
-            <li className="border-l-2 pl-4">
+            <li className="border-l-2 pl-4 transition-colors duration-300 hover:text-primary">
               <Link to="/">صفحه اصلی</Link>
             </li>
-            <li className="border-l-2 pl-4">
+            <li className="border-l-2 pl-4 transition-colors duration-300 hover:text-primary">
               <Link to="/about">درباره ما</Link>
             </li>
-            <li className="border-l-2 pl-4">
+            <li className="border-l-2 pl-4 transition-colors duration-300 hover:text-primary">
               <Link to="/contact">تماس</Link>
             </li>
           </ul>
@@ -31,15 +31,15 @@ export const Footer = () => {
             تمامی حقوق برای کاربر این محصول حفظ است
           </p>
           <div className="flex items-center gap-2">
-            <a href="#">
+            <Link to="#">
               <img src={instagram} alt="instagram" />
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <img src={facebook} alt="facebook" />
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <img src={twitter} alt="twitter" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

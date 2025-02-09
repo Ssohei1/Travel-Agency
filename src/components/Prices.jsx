@@ -134,7 +134,7 @@ export const Prices = ({ prices, start, end }) => {
           <p className="mb-4 mt-5 font-iransansM text-lg">130.000.000 تومان</p>
         </div>
       </div>
-      <button className="rounded-full bg-primary py-3 font-iransansB text-xl text-white">
+      <button className="rounded-full bg-primary py-3 font-iransansB text-lg text-white">
         رزرو کنید
       </button>
     </div>
