@@ -22,7 +22,7 @@ This is a travel agency website built using **React**, **Tailwind CSS**, **Mater
 
 ## UI Design
 
-The UI design was inspired by a [Figma design](https://www.figma.com/design/IA7ddcEdDyIBBE8pjX10Tt/Travel-Agency-\(Community\)?node-id=93-41). However, I customized several parts of the UI to improve usability and fix design issues present in the original file.
+The UI design was inspired by a [Figma design](https://www.figma.com/design/IA7ddcEdDyIBBE8pjX10Tt/Travel-Agency-(Community)?node-id=93-41). However, I customized several parts of the UI to improve usability and fix design issues present in the original file.
 
 ## Getting Started
 
@@ -35,8 +35,8 @@ Make sure you have **Node.js** and **npm** installed on your machine.
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-link>
-   cd <repository-folder>
+   git clone https://github.com/Ssohei1/Travel-Agency.git
+   cd Travel-Agency
    ```
 
 2. **Install dependencies:**
